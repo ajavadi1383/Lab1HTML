@@ -1,0 +1,38 @@
+body {
+    background-color: #f4f1ea;
+    color: #2b2b2b;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 780px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
+h1{
+    color: red;
+    text-align: left;
+}
+
+h2{
+    color: blue;
+    text-align: left;
+}
+p{
+    color: black;
+    text-align: left;
+}
+.small_image{
+    width: 100px;
+    height: 150px;
+}
+hr{
+    border: 1px solid black;
+}   
+
+ul {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 8px;
+}

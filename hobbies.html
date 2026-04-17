@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobby | Competitive Programming</title>
+    <link rel="stylesheet" href="hobbies.css">
+</head>
+<body>
+
+    <header class="hero">
+        <h1 class="hero-title">Competitive Programming</h1>
+        <p class="hero-sub">My favorite kind of puzzle.</p>
+    </header>
+
+    <main class="grid">
+
+        <!-- Card 1: Image -->
+        <section class="card">
+            <h2>Why I Love It</h2>
+            <img src="algorithms.jpg" alt="A whiteboard covered in algorithm diagrams and pseudocode" class="card-image">
+            <p>
+                There's a specific kind of joy in staring at a problem for two hours, then finally seeing the recurrence click into place. Dynamic programming, divide and conquer, graph algorithms — they all start as chaos and end as a clean, tight solution.
+            </p>
+        </section>
+
+        <!-- Card 2: Video -->
+        <section class="card">
+            <h2>Watch a Solve in Action</h2>
+            <video controls class="card-video" poster="video-thumb.jpg">
+                <source src="solve-demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>
+                A quick walkthrough of tracing a longest decreasing subsequence on a grid — one of my favorite DP patterns.
+            </p>
+        </section>
+
+        <!-- Card 3: Form -->
+        <section class="card card-wide">
+            <h2>Suggest a Problem</h2>
+            <p>Got an interesting algorithm problem? Send it my way.</p>
+
+            <form class="suggest-form">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Ada Lovelace" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="topic">Problem topic</label>
+                <select id="topic" name="topic">
+                    <option>Dynamic Programming</option>
+                    <option>Divide and Conquer</option>
+                    <option>Graph Theory</option>
+                    <option>Greedy</option>
+                    <option>Other</option>
+                </select>
+
+                <label for="description">Problem description</label>
+                <textarea id="description" name="description" rows="4" placeholder="Describe the problem..."></textarea>
+
+                <button type="submit" class="submit-btn">Send it over</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><a href="index.html">← Back to main page</a></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+/* === Base === */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #0f1115;
+    color: #e8e6e1;
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+}
+
+/* === Hero with CSS animation === */
+.hero {
+    text-align: center;
+    padding: 80px 20px 60px;
+    background: linear-gradient(135deg, #1a1d24 0%, #2d1e14 100%);
+    border-bottom: 3px solid rgb(181, 87, 43);
+}
+
+.hero-title {
+    font-size: 3em;
+    margin: 0;
+    color: rgb(230, 140, 80);
+    letter-spacing: 2px;
+    animation: fadeSlideIn 1.2s ease-out;
+}
+
+.hero-sub {
+    font-style: italic;
+    color: #b8b1a4;
+    margin-top: 10px;
+    animation: fadeSlideIn 1.6s ease-out;
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* === Flex grid of cards === */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    padding: 40px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card {
+    flex: 1 1 300px;
+    max-width: 360px;
+    background: #191c22;
+    border: 1px solid #2a2e36;
+    border-radius: 10px;
+    padding: 22px;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: rgb(181, 87, 43);
+}
+
+.card-wide {
+    flex: 1 1 100%;
+    max-width: 740px;
+}
+
+.card h2 {
+    color: rgb(230, 140, 80);
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+/* === Media === */
+.card-image,
+.card-video {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+/* === Form === */
+.suggest-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.suggest-form label {
+    font-size: 0.9em;
+    color: #b8b1a4;
+    margin-top: 6px;
+}
+
+.suggest-form input,
+.suggest-form select,
+.suggest-form textarea {
+    background: #0f1115;
+    border: 1px solid #2a2e36;
+    border-radius: 5px;
+    color: #e8e6e1;
+    padding: 9px 12px;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.suggest-form input:focus,
+.suggest-form select:focus,
+.suggest-form textarea:focus {
+    outline: none;
+    border-color: rgb(181, 87, 43);
+}
+
+.submit-btn {
+    margin-top: 14px;
+    padding: 11px;
+    background: rgb(181, 87, 43);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+    background: rgb(210, 110, 55);
+}
+
+/* === Footer === */
+footer {
+    text-align: center;
+    padding: 30px 20px 50px;
+    border-top: 1px solid #2a2e36;
+    margin-top: 40px;
+}
+
+footer a {
+    color: rgb(230, 140, 80);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
